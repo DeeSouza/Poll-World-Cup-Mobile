@@ -1,9 +1,9 @@
-import { TouchableOpacity, TouchableOpacityProps } from "react-native";
-import { Heading, HStack, Text, VStack } from "native-base";
+import { TouchableOpacity, TouchableOpacityProps } from 'react-native';
+import { Heading, HStack, Text, VStack } from 'native-base';
 
-import { Participants, ParticipantProps } from "./Participants";
+import { Participants, ParticipantProps } from './Participants';
 
-export interface PollPros {
+export interface PollCardPros {
   id: string;
   code: string;
   title: string;
@@ -19,7 +19,7 @@ export interface PollPros {
 }
 
 interface Props extends TouchableOpacityProps {
-  data: PollPros;
+  data: PollCardPros;
 }
 
 export function PollCard({ data, ...rest }: Props) {

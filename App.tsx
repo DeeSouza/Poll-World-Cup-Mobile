@@ -12,7 +12,7 @@ import { Loading } from "./src/components/Loading";
 import { SignIn } from "./src/screens/SignIn";
 import { New } from "./src/screens/New";
 import { Find } from "./src/screens/Find";
-import { Pools } from "./src/screens/Pools";
+import { Polls } from "./src/screens/Polls";
 
 import { THEME } from "./src/styles/theme";
 
@@ -31,7 +31,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Pools /> : <Loading />}
+        {fontsLoaded ? <Polls /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
